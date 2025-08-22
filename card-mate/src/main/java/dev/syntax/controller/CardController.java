@@ -1,4 +1,4 @@
-package com.cardrecommendation.controller;
+package dev.syntax.controller;
 
 import java.io.IOException;
 
