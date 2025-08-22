@@ -8,6 +8,7 @@ public class Card {
     private String cardType;
     private BigDecimal annualFee;
     private BigDecimal performanceReq;
+    private String cardImage; 
 
     // 계산 결과 표시용
     private BigDecimal netBenefit; // 총혜택 - 연회비
@@ -27,4 +28,10 @@ public class Card {
     public void setNetBenefit(BigDecimal netBenefit) { this.netBenefit = netBenefit; }
     public BigDecimal getTotalSpend() { return totalSpend; }
     public void setTotalSpend(BigDecimal totalSpend) { this.totalSpend = totalSpend; }
+    public String getCardImage() {
+        return cardImage;
+    }
+    public void setCardImage(String cardImage) {
+        this.cardImage = cardImage;
+    }
 }
