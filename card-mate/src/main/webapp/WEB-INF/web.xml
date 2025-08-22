@@ -10,7 +10,7 @@
   <!-- RecommendController: /recommend -->
   <servlet>
     <servlet-name>RecommendController</servlet-name>
-    <servlet-class>com.cardrecommendation.controller.RecommendController</servlet-class>
+    <servlet-class>dev.syntax.controller.RecommendController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RecommendController</servlet-name>
@@ -21,7 +21,7 @@
   <!--
   <servlet>
     <servlet-name>CardController</servlet-name>
-    <servlet-class>com.cardrecommendation.controller.CardController</servlet-class>
+    <servlet-class>dev.syntax.controller.CardController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CardController</servlet-name>

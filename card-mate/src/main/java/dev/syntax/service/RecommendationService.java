@@ -1,21 +1,30 @@
 package dev.syntax.service;
 
-import com.cardrecommendation.model.dao.CardDAO;
-import com.cardrecommendation.model.dto.Card;
+import dev.syntax.model.dao.CardDAO;
+import dev.syntax.model.dao.UserDAO;
+import dev.syntax.model.dto.Card;
 
+import java.util.Collections;
 import java.util.List;
 
 public class RecommendationService {
     private final CardDAO cardDAO = new CardDAO();
+    private final UserDAO userDAO = new UserDAO();
 
-    // 현재 단계: 입력 없이 userId 고정(=1) 목데이터 기준 추천
+    // (기존) 목데이터용은 남겨도 되지만 실제 화면에선 쓰지 않기
     public List<Card> recommendStatic() {
         long mockUserId = 1L;
         return cardDAO.getRecommendedCards(mockUserId);
     }
 
-    // 다음 단계(시간 나면): 특정 userId 또는 폼 입력 받아 동적 추천
     public List<Card> recommendForUser(long userId) {
+        return cardDAO.getRecommendedCards(userId);
+    }
+
+    // ✅ 이름으로 들어오면 여기서 user_id를 찾아 실제 추천 실행
+    public List<Card> recommendByUserName(String userName) {
+        Long userId = userDAO.findUserIdByName(userName);
+        if (userId == null) return Collections.emptyList(); // 사용자 없음
         return cardDAO.getRecommendedCards(userId);
     }
 }
