@@ -1,4 +1,4 @@
-package com.cardrecommendation.model.dto;
+package dev.syntax.model.dto;
 // DTO는 계층간 데이터 교환을 위한 객체  데이터를 교환하는 목적을 갖는 객체이기 때문에, 서비스 로직을 갖고 있지 않다.
 import java.math.BigDecimal;
 

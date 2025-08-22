@@ -1,7 +1,8 @@
-package com.cardrecommendation.model.dao;
+package dev.syntax.model.dao;
 
-import com.cardrecommendation.util.DBUtil;
 import java.sql.*;
+
+import dev.syntax.util.DBUtil;
 
 public class UserDAO {
     public Long findUserIdByName(String userName) {

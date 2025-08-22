@@ -1,7 +1,6 @@
-package com.cardrecommendation.model.dao;
-// DAO DB의 data에 접근하는 객체
-import com.cardrecommendation.model.dto.Card;
-import com.cardrecommendation.util.DBUtil;
+package dev.syntax.model.dao;
+import dev.syntax.model.dto.Card;
+import dev.syntax.util.DBUtil;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.cardrecommendation.util;
+package dev.syntax.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,8 +1,8 @@
-package com.cardrecommendation.model.service;
+package dev.syntax.service;
 
-import com.cardrecommendation.model.dao.CardDAO;
-import com.cardrecommendation.model.dao.UserDAO;
-import com.cardrecommendation.model.dto.Card;
+import dev.syntax.model.dao.CardDAO;
+import dev.syntax.model.dao.UserDAO;
+import dev.syntax.model.dto.Card;
 
 import java.util.Collections;
 import java.util.List;
