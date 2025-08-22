@@ -1,4 +1,4 @@
-package com.cardrecommendation.model.service;
+package dev.syntax.service;
 
 import com.cardrecommendation.model.dao.CardDAO;
 import com.cardrecommendation.model.dto.Card;

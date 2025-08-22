@@ -1,7 +1,8 @@
-package com.cardrecommendation.controller;
+package dev.syntax.controller;
 
 import com.cardrecommendation.model.dto.Card;
-import com.cardrecommendation.model.service.RecommendationService;
+
+import dev.syntax.service.RecommendationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
