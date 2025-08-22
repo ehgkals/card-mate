@@ -1,2 +1,0 @@
-INDEX VERSION 1.4+C:\card-mate\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-505205731.index
